@@ -14,8 +14,7 @@
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
--->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+--><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -38,36 +37,6 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
         </license>
     </licenses>
-
-    <repositories>
-    <repository>
-      <id>fuse-public-repository</id>
-      <name>FuseSource Community Release Repository</name>
-      <url>https://repo.fusesource.com/nexus/content/groups/public</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-    </repository>
-  </repositories>
-
-    <pluginRepositories>
-    <pluginRepository>
-      <id>fuse-public-repository</id>
-      <name>FuseSource Community Release Repository</name>
-      <url>https://repo.fusesource.com/nexus/content/groups/public</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-    </pluginRepository>
-  </pluginRepositories>
 
     <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -229,8 +198,7 @@
         <extensions>true</extensions>
         <configuration>
           <instructions>
-            <Import-Package>
-              javax.xml.bind.annotation,
+            <Import-Package>javax.xml.bind.annotation,
               javax.ws.rs,
               javax.ws.rs.core,
               org.apache.karaf.jaas.boot.principal,
@@ -244,14 +212,10 @@
               org.apache.cxf.transport.http,
               io.fabric8.cxf,
               com.fasterxml.jackson.annotation, com.fasterxml.jackson.core, com.fasterxml.jackson.databind,
-              com.fasterxml.jackson.jaxrs.json, javax.ws.rs.ext,*
-            </Import-Package>
+              com.fasterxml.jackson.jaxrs.json, javax.ws.rs.ext,*</Import-Package>
             <Import-Service>org.apache.aries.blueprint.NamespaceHandler;
-                osgi.service.blueprint.namespace=http://cxf.apache.org/transports/http/configuration
-            </Import-Service>
-            <Export-Package>
-              io.fabric8.quickstarts.rest.secure
-            </Export-Package>
+                osgi.service.blueprint.namespace=http://cxf.apache.org/transports/http/configuration</Import-Service>
+            <Export-Package>io.fabric8.quickstarts.rest.secure</Export-Package>
           </instructions>
         </configuration>
       </plugin>

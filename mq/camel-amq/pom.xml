@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
      Copyright 2005-2015 Red Hat, Inc.
@@ -14,8 +15,7 @@
      implied.  See the License for the specific language governing
      permissions and limitations under the License.
 
--->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+--><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -34,11 +34,9 @@
     <fuse.osgi.export>io.fabric8.mq.fabric.camel;version=${fuse.osgi.version};-noimport:=true</fuse.osgi.export>
 
     <!-- lets explicitly import the mq-fabric and cf code -->
-    <fuse.osgi.import.pkg>
-      io.fabric8.mq.fabric,
+    <fuse.osgi.import.pkg>io.fabric8.mq.fabric,
       org.apache.activemq.pool,
-      *
-    </fuse.osgi.import.pkg>
+      *</fuse.osgi.import.pkg>
   </properties>
 
   <dependencies>
@@ -127,15 +125,6 @@
       </plugin>
     </plugins>
   </build>
-  <reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.camel</groupId>
-        <artifactId>camel-package-maven-plugin</artifactId>
-        <version>${camel-version}</version>
-      </plugin>
-    </plugins>
-  </reporting>
   <profiles>
     <!-- enables the APT dependency so that it can be disabled in IDE builds -->
     <profile>

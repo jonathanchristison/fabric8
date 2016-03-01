@@ -15,8 +15,7 @@
      implied.  See the License for the specific language governing
      permissions and limitations under the License.
 
--->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+--><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>io.fabric8</groupId>
         <artifactId>fabric-project</artifactId>
@@ -61,14 +60,14 @@
             <dependency>
                 <groupId>io.fabric8.quickstarts</groupId>
                 <artifactId>fabric8-quickstarts-parent</artifactId>
-                <version>${project.version}</version>
+                <version>1.2.0.redhat-621084</version>
                 <type>pom</type>
             </dependency>
 
             <dependency>
                 <groupId>io.fabric8.quickstarts</groupId>
                 <artifactId>fabric8-quickstarts-parent</artifactId>
-                <version>${project.version}</version>
+                <version>1.2.0.redhat-621084</version>
                 <classifier>profile</classifier>
                 <type>zip</type>
             </dependency>
@@ -370,7 +369,7 @@
             <dependency>
                 <groupId>io.fabric8.patch</groupId>
                 <artifactId>patch-features</artifactId>
-                <version>${project.version}</version>
+                <version>1.2.0.redhat-621084</version>
                 <type>xml</type>
                 <classifier>features</classifier>
             </dependency>
@@ -516,93 +515,91 @@
                            </goals>
                            <configuration>
                                <target name="update-properties">
-                                   <echo message="Updating etc/startup.properties in unix assembly"/>
+                                   <echo message="Updating etc/startup.properties in unix assembly"></echo>
                                    <concat destfile="target/dependencies/unix/apache-karaf-${karaf-version}/etc/startup.properties" append="true" eol="unix">
-                                       <fileset file="target/classes/etc/startup.properties"/>
+                                       <fileset file="target/classes/etc/startup.properties"></fileset>
                                    </concat>
 
-                                   <echo message="Updating etc/config.properties in unix assembly" />
+                                   <echo message="Updating etc/config.properties in unix assembly"></echo>
                                    <concat destfile="target/dependencies/unix/apache-karaf-${karaf-version}/etc/config.properties" append="true" eol="unix">
-                                       <fileset file="src/main/append-resources/common/etc/config.properties" />
+                                       <fileset file="src/main/append-resources/common/etc/config.properties"></fileset>
                                    </concat>
 
-                                   <echo message="Updating etc/custom.properties in unix assembly" />
+                                   <echo message="Updating etc/custom.properties in unix assembly"></echo>
                                    <concat destfile="target/dependencies/unix/apache-karaf-${karaf-version}/etc/custom.properties" append="true" eol="unix">
-                                        <fileset file="src/main/append-resources/common/etc/custom.properties" />
+                                        <fileset file="src/main/append-resources/common/etc/custom.properties"></fileset>
                                    </concat>
 
-                                   <echo message="Updating etc/org.ops4j.pax.logging.cfg in unix assembly" />
+                                   <echo message="Updating etc/org.ops4j.pax.logging.cfg in unix assembly"></echo>
                                    <concat destfile="target/dependencies/unix/apache-karaf-${karaf-version}/etc/org.ops4j.pax.logging.cfg" append="true" eol="unix">
-                                       <fileset file="src/main/append-resources/common/etc/org.ops4j.pax.logging.cfg" />
+                                       <fileset file="src/main/append-resources/common/etc/org.ops4j.pax.logging.cfg"></fileset>
                                    </concat>
 
-                                   <echo message="Updating etc/system.properties in unix assembly" />
+                                   <echo message="Updating etc/system.properties in unix assembly"></echo>
                                    <concat destfile="target/dependencies/unix/apache-karaf-${karaf-version}/etc/system.properties" append="true" eol="unix">
-                                       <fileset file="src/main/append-resources/common/etc/system.properties" />
+                                       <fileset file="src/main/append-resources/common/etc/system.properties"></fileset>
                                    </concat>
 
-                                   <echo message="Updating etc/shell.init.script in unix assembly" />
+                                   <echo message="Updating etc/shell.init.script in unix assembly"></echo>
                                    <concat destfile="target/dependencies/unix/apache-karaf-${karaf-version}/etc/shell.init.script" append="true" eol="unix">
-                                       <fileset file="src/main/append-resources/common/etc/shell.init.script" />
+                                       <fileset file="src/main/append-resources/common/etc/shell.init.script"></fileset>
                                    </concat>
 
-                                   <echo message="Copying bin/fabric8 in unix assembly" />
+                                   <echo message="Copying bin/fabric8 in unix assembly"></echo>
                                    <concat destfile="target/dependencies/unix/apache-karaf-${karaf-version}/bin/fabric8" append="true" eol="unix">
-                                       <fileset file="src/main/append-resources/unix/fabric8" />
+                                       <fileset file="src/main/append-resources/unix/fabric8"></fileset>
                                    </concat>
-                                   <echo message="Copying bin/deletefabric8 in unix assembly" />
+                                   <echo message="Copying bin/deletefabric8 in unix assembly"></echo>
                                    <concat destfile="target/dependencies/unix/apache-karaf-${karaf-version}/bin/deletefabric8" append="true" eol="unix">
-                                       <fileset file="src/main/append-resources/unix/deletefabric8" />
+                                       <fileset file="src/main/append-resources/unix/deletefabric8"></fileset>
                                    </concat>
-                                   <echo message="Copying bin/fabric8-start in unix assembly" />
+                                   <echo message="Copying bin/fabric8-start in unix assembly"></echo>
                                    <concat destfile="target/dependencies/unix/apache-karaf-${karaf-version}/bin/fabric8-start" append="true" eol="unix">
-                                       <fileset file="src/main/append-resources/unix/fabric8-start" />
+                                       <fileset file="src/main/append-resources/unix/fabric8-start"></fileset>
                                    </concat>
-                                   <echo message="Copying bin/setenv in unix assembly" />
+                                   <echo message="Copying bin/setenv in unix assembly"></echo>
                                    <concat destfile="target/dependencies/unix/apache-karaf-${karaf-version}/bin/setenv" append="no" overwrite="true" eol="unix">
-                                       <fileset file="src/main/append-resources/unix/setenv" />
+                                       <fileset file="src/main/append-resources/unix/setenv"></fileset>
                                    </concat>
-                                   <echo message="Copying bin/fabric8.bat in windows assembly" />
+                                   <echo message="Copying bin/fabric8.bat in windows assembly"></echo>
                                    <concat destfile="target/dependencies/win/apache-karaf-${karaf-version}/bin/fabric8.bat" append="true" eol="dos">
-                                       <fileset file="src/main/append-resources/win/fabric8.bat" />
+                                       <fileset file="src/main/append-resources/win/fabric8.bat"></fileset>
                                    </concat>
-                                   <echo message="Copying bin/fabric8-start.bat in windows assembly" />
+                                   <echo message="Copying bin/fabric8-start.bat in windows assembly"></echo>
                                    <concat destfile="target/dependencies/win/apache-karaf-${karaf-version}/bin/fabric8-start.bat" append="true" eol="dos">
-                                       <fileset file="src/main/append-resources/win/fabric8-start.bat" />
+                                       <fileset file="src/main/append-resources/win/fabric8-start.bat"></fileset>
                                    </concat>
-                                   <echo message="Copying bin/standalone in unix assembly" />
+                                   <echo message="Copying bin/standalone in unix assembly"></echo>
                                    <concat destfile="target/dependencies/unix/apache-karaf-${karaf-version}/bin/standalone" append="true" eol="unix">
-                                       <fileset file="src/main/append-resources/unix/standalone" />
+                                       <fileset file="src/main/append-resources/unix/standalone"></fileset>
                                    </concat>
-                                   <echo message="Copying bin/standalone.bat in windows assembly" />
+                                   <echo message="Copying bin/standalone.bat in windows assembly"></echo>
                                    <concat destfile="target/dependencies/win/apache-karaf-${karaf-version}/bin/standalone.bat" append="true" eol="dos">
-                                       <fileset file="src/main/append-resources/win/standalone.bat" />
+                                       <fileset file="src/main/append-resources/win/standalone.bat"></fileset>
                                    </concat>
-                                   <echo message="Copying bin/setenv.bat in windows assembly" />
+                                   <echo message="Copying bin/setenv.bat in windows assembly"></echo>
                                    <concat destfile="target/dependencies/win/apache-karaf-${karaf-version}/bin/setenv.bat" append="no" overwrite="true" eol="dos">
-                                       <fileset file="src/main/append-resources/win/setenv.bat" />
+                                       <fileset file="src/main/append-resources/win/setenv.bat"></fileset>
                                    </concat>
 
                                   <!-- now lets add to the initial import profile metadata -->
-                                  <property name="dest.profiles" value="${basedir}/target/classes/distro/fabric/import/fabric/profiles"/>
-                                  <property name="dest.profiles.zip" value="${basedir}/target/classes/distro/fabric/import"/>
+                                  <property name="dest.profiles" value="${basedir}/target/classes/distro/fabric/import/fabric/profiles"></property>
+                                  <property name="dest.profiles.zip" value="${basedir}/target/classes/distro/fabric/import"></property>
 
                                   <!-- documentation -->
-                                  <echo message="Copying documentation to wiki"/>
+                                  <echo message="Copying documentation to wiki"></echo>
                                   <copy todir="${dest.profiles}/docs/fabric">
-                                    <fileset dir="${basedir}/../../docs"/>
+                                    <fileset dir="${basedir}/../../docs"></fileset>
                                   </copy>
 
                                   <!-- quickstart zip to system -->
-                                  <echo message="Copying quickstarts"/>
-                                  <property name="quickstart.src" value="${basedir}/../../quickstarts"/>
-                                  <copy file="${quickstart.src}/target/profile.zip"
-                                    tofile="target/features-repo/io/fabric8/quickstarts/fabric8-quickstarts-parent/${project.version}/fabric8-quickstarts-parent-${project.version}-profile.zip"/>
+                                  <echo message="Copying quickstarts"></echo>
+                                  <property name="quickstart.src" value="${basedir}/../../quickstarts"></property>
+                                  <copy file="${quickstart.src}/target/profile.zip" tofile="target/features-repo/io/fabric8/quickstarts/fabric8-quickstarts-parent/${project.version}/fabric8-quickstarts-parent-${project.version}-profile.zip"></copy>
 
                                   <!-- .gitattributes -->
-                                  <echo message="Copying .gitattributes"/>
-                                  <copy file="${basedir}/src/main/resources/distro/fabric/import/fabric/profiles/.gitattributes"
-                                    todir="${dest.profiles}"/>
+                                  <echo message="Copying .gitattributes"></echo>
+                                  <copy file="${basedir}/src/main/resources/distro/fabric/import/fabric/profiles/.gitattributes" todir="${dest.profiles}"></copy>
                                </target>
                            </configuration>
                        </execution>
@@ -622,7 +619,7 @@
                              <projectName>Fabric8</projectName>
                              <organizationName>Red Hat, Inc. All Rights Reserved.</organizationName>
                              <organizationURL>http://redhat.com</organizationURL>
-                             <preamble>In addition to the Red Hat products, this disk contains certain third party software or components (“Third Party Components”), which are bundled as separate files or modules and separately licensed to you by said third parties. This file contains a listing of all NOTICE/NOTICE.txt files included with the Third Party Component jars in this distribution of Fabric8. Please see the fabric_dependencies.txt file for the complete listing of Third Party Components and their attributed license agreements.  Your use of the Third Party Components is subject to the terms and conditions set forth in the applicable third party license agreement.  The Third Party Components are provided by Red Hat Inc. solely on an "AS IS" basis, without any warranty.  Red Hat, Inc. disclaims all warranties and indemnities with respect to the Third Party Components, express or implied, and assumes no liability with respect to the Third Party Components.  You acknowledge that the authors of the Third Party Components have no obligation to provide support to you for the Third Party Components.  You hereby undertake to comply with all licenses related to the applicable Third Party Components. All third party license agreements are contained in the licenses directory of </preamble>
+                             <preamble>In addition to the Red Hat products, this disk contains certain third party software or components (“Third Party Components”), which are bundled as separate files or modules and separately licensed to you by said third parties. This file contains a listing of all NOTICE/NOTICE.txt files included with the Third Party Component jars in this distribution of Fabric8. Please see the fabric_dependencies.txt file for the complete listing of Third Party Components and their attributed license agreements.  Your use of the Third Party Components is subject to the terms and conditions set forth in the applicable third party license agreement.  The Third Party Components are provided by Red Hat Inc. solely on an "AS IS" basis, without any warranty.  Red Hat, Inc. disclaims all warranties and indemnities with respect to the Third Party Components, express or implied, and assumes no liability with respect to the Third Party Components.  You acknowledge that the authors of the Third Party Components have no obligation to provide support to you for the Third Party Components.  You hereby undertake to comply with all licenses related to the applicable Third Party Components. All third party license agreements are contained in the licenses directory of</preamble>
                              <listDependencies>true</listDependencies>
                              <excludeDependencies>org.apache.servicemix.bundles:org.apache.servicemix.bundles.opensaml:2.6.1_1</excludeDependencies>
                              <extraDependencies>org.apache.servicemix.bundles:org.apache.servicemix.bundles.opensaml:2.6.1_2,xerces:xercesImpl:${xerces.version},xalan:xalan:${xalan.version},xalan:serializer:${xalan.version},org.apache.servicemix.specs:org.apache.servicemix.specs.activator:${servicemix-specs-version},org.apache.servicemix.specs:org.apache.servicemix.specs.jaxp-api-1.4:${servicemix-specs-version},org.apache.servicemix.specs:org.apache.servicemix.specs.jaxws-api-2.2:${servicemix-specs-version}</extraDependencies>
@@ -762,23 +759,15 @@
            					<pluginExecutions>
            						<pluginExecution>
            							<pluginExecutionFilter>
-           								<groupId>
-           									org.apache.karaf.tooling
-           								</groupId>
-           								<artifactId>
-           									features-maven-plugin
-           								</artifactId>
-           								<versionRange>
-           									[2.2.2-fuse-02-06,)
-           								</versionRange>
+           								<groupId>org.apache.karaf.tooling</groupId>
+           								<artifactId>features-maven-plugin</artifactId>
+           								<versionRange>[2.2.2-fuse-02-06,)</versionRange>
            								<goals>
-           									<goal>
-           										add-features-to-repo
-           									</goal>
+           									<goal>add-features-to-repo</goal>
            								</goals>
            							</pluginExecutionFilter>
            							<action>
-           								<ignore />
+           								<ignore></ignore>
            							</action>
            						</pluginExecution>
            					</pluginExecutions>

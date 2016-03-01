@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots />
+          <id>fusesource.m2-snapshot</id>
+          <name>FuseSource Community Snapshot Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public-snapshots</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fusesource.ea</id>
+          <name>JBoss Community Early Access Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/ea</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fusesource.m2</id>
+          <name>JBoss FS Public Repository Group</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>jboss.fs.public</id>
+          <name>JBoss FS Public Repository Group</name>
+          <url>http://repository.jboss.org/nexus/content/repositories/fs-public/</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+            <updatePolicy>never</updatePolicy>
+          </snapshots>
+          <id>jboss-thirdparty-uploads</id>
+          <name>JBoss Thirdparty Uploads</name>
+          <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-uploads</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <updatePolicy>daily</updatePolicy>
+          </snapshots>
+          <id>jboss-public-repository-group</id>
+          <name>JBoss Public Repository Group</name>
+          <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
+          <releases />
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>java.net</id>
+          <name>Java.net Maven2 Repository</name>
+          <url>http://download.java.net/maven/2</url>
+        </repository>
+        <repository>
+          <releases />
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>servicemix.m2-repo</id>
+          <name>ServiceMix Maven 2 repository</name>
+          <url>http://svn.apache.org/repos/asf/servicemix/m2-repo</url>
+        </repository>
+        <repository>
+          <id>maven-restlet</id>
+          <name>Public online Restlet repository</name>
+          <url>http://maven.restlet.org</url>
+        </repository>
+        <repository>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <id>apache.snapshots</id>
+          <name>Apache Snapshot Repository</name>
+          <url>http://repository.apache.org/snapshots</url>
+        </repository>
+        <repository>
+          <releases />
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>conjars</id>
+          <name>Conjars Maven Repository</name>
+          <url>http://conjars.org/repo</url>
+        </repository>
+        <repository>
+          <id>redhat-product</id>
+          <name>Redhat Product Repository</name>
+          <url>https://maven.repository.redhat.com/ga</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>brewroot</id>
+          <name>Brew Repository</name>
+          <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-fuse-6.2-build/latest/maven</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fusesource.ea</id>
+          <name>JBoss Community Early Access Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/ea</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fusesource.m2</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fusesource.ea</id>
+          <name>FuseSource Community Early Access Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/ea</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>jboss.fs.public</id>
+          <name>JBoss FS Public Repository Group</name>
+          <url>http://repository.jboss.org/nexus/content/repositories/fs-public/</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <id>apache.snapshots</id>
+          <name>Apache Snapshot Repository</name>
+          <url>http://repository.apache.org/snapshots</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fusesource.ea</id>
+          <name>JBoss Community Early Access Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/ea</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>fuse-public-repository</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <id>removed-by-pme</id>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>removed-by-pme</activeProfile>
+  </activeProfiles>
+</settings>
